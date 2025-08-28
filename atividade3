@@ -1,24 +1,23 @@
 import java.util.Scanner;
-
-public class Exercicio3 {
+public class JavaApplication3 {    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite um número inteiro: ");
+        System.out.print("Digite um número: ");
         int numero = sc.nextInt();
 
-        long fatorial = 1;
+        long ftorial = 1;
 
         System.out.print(numero + "! = ");
         for (int i = numero; i >= 1; i--) {
-            fatorial *= i;
+            ftorial *= i;
             System.out.print(i);
             if (i > 1) {
                 System.out.print(" * ");
             }
         }
 
-        System.out.println(" = " + fatorial);
+        System.out.println(" = " + ftorial);
 
         sc.close();
     }
