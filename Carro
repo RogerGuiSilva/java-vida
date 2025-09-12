@@ -1,0 +1,54 @@
+package aula1109;
+
+public class Carro {
+    private String modelo;
+    private double capacidadeTanque;
+    private double qtdeCombustivel;
+    
+     public Carro(String modelo, double capacidadeTanque) {
+        this.modelo = modelo;
+        this.capacidadeTanque = capacidadeTanque;
+        this.qtdeCombustivel = 0;
+    }
+    
+public void abastecer(double qtde) {
+        if (qtdeCombustivel + qtde > capacidadeTanque) {
+            System.out.println("Quantidade excede a capacidade do tanque");
+        }
+        
+       else {
+            qtdeCombustivel += qtde;
+            System.out.println("Atual: " + qtdeCombustivel + " litros");
+        }
+    }
+
+    void combustivelAtual() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+    
+  
+
+    
